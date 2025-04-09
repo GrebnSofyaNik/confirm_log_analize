@@ -1,0 +1,38 @@
+{
+  "name": "confirm",
+  "displayName": "Confirm syntaxes",
+  "description": "Подсветка синтаксиса для логов подтверждения",
+  "version": "0.0.1",
+  "publisher": "flatulek",
+  "engines": {
+    "vscode": ">=1.94.2"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "confirm",
+        "aliases": [
+          "confirmLanguage",
+          "conf"
+        ],
+        "extensions": [
+          ".txt"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "confirm",
+        "scopeName": "source.confirm",
+        "path": "./syntaxes/confirm.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.3.2"
+  }
+}

@@ -1,0 +1,27 @@
+{
+	"scopeName": "source.confirm",
+	"name": "Confirm",
+	"patterns": [
+		// Ключевые слова из секции Keywords1
+		{
+			"match": "\\b(ClientConfirm|ClientSign|EmployeeSign|Fraud|Gap|ReviewStaff)\\b",
+			"name": "keyword.control.confirm"
+		},
+		// Ключевые слова из секции Keywords2
+		{
+			"match": "\\b(showCardScreen|showPatScreen|confirmByClient|operationName)\\b",
+			"name": "support.function.confirm"
+		},
+		// Ошибки (Keywords3)
+		{
+			"match": "\\b(ERROR|DENY)\\b",
+			"name": "invalid.illegal.error.confirm"
+		},
+		// Разделители (Delimiters)
+		{
+			"match": "\"actionCode\":\"REVIEW\"",
+			"name": "string.quoted.double.confirm"
+		}
+	],
+	"repository": {}
+}
